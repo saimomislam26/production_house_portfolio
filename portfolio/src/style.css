@@ -13,12 +13,17 @@ body {
     background-color: #F8F8F8;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .sidebar {
     height: 100%;
     width: 300px;
     background-color: #FFFFFF !important;
+    position:fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .sidebar-list {
@@ -50,7 +55,9 @@ body {
 .row #title {
     flex: 70%;
     transition: all 0.2s ease;
-    color: #4D4D4D;
+    color: #767676;
+    font-weight: 500;
+    font-family: 'Montserrat' !important;
 }
 
 .sidebar-list #title:hover {
@@ -59,8 +66,15 @@ body {
     font-size: 20px;
     color: black;
 }
-.sidebar-list #active{
+ .active{
     cursor: pointer;
     letter-spacing: 1.5px;
     font-size: 20px;
+    color: black !important;
 }
+
+.main {
+    margin-left: 300px; /* Same as the width of the sidenav */
+    /* font-size: 28px;  */
+    padding: 0px 10px;
+  }

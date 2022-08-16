@@ -14,10 +14,9 @@ const Sidebar = () => {
                             <li
                                 key={ind}
                                 className="row"
-                                id={location.pathname === val.link?"active":""}
                                 onClick={() => navigate(val.link)}>
                                 <div id="icon">{val.icon}</div>
-                                <div id="title">{val.title}</div>
+                                <div id="title" className={location.pathname === val.link?"active":""} >{val.title}</div>
                             </li>
                         )
                     })
