@@ -5,6 +5,7 @@ import Sidebar from './Component/SideBar/Sidebar';
 import Home from './Component/Body/Home';
 import About from './Component/Body/About';
 import Portfolio from './Component/Body/Portfolio';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

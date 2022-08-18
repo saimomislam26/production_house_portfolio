@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
     /* color: black; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     /* box-sizing: border-box; */
 }
@@ -58,18 +58,19 @@ body {
     color: #767676;
     font-weight: 500;
     font-family: 'Montserrat' !important;
+    font-size: 20px;
 }
 
 .sidebar-list #title:hover {
     cursor: pointer;
     letter-spacing: 1.5px;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: black;
 }
  .active{
     cursor: pointer;
     letter-spacing: 1.5px;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: black !important;
 }
 
@@ -78,3 +79,179 @@ body {
     /* font-size: 28px;  */
     padding: 0px 10px;
   }
+
+  /* About pop up */
+  .photography-skill-text{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat' !important;
+  }
+
+  .wedding-photography-sub,.lifestyle-photography-sub,.film-photography-sub{
+    display: flex;
+    justify-content: space-between;
+  }
+  .language-skill-text,.fun-fact-text,.partner-text{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat' !important;
+  }
+  .label,.number{
+    font-family: "Mulish" !important;
+    font-style: italic;
+    font-size:15px;
+    line-height: 30px;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+  }
+
+ .wedding-photography,.lifestyle-photography,.film-photography{
+    margin-top: 15px;
+ }
+
+ @media only screen and (max-width: 767px) {
+    .left-side-skill {
+      margin-bottom: 30px;
+    }
+  }
+  /* About Fun Facts */
+  .flex-container{
+    display: flex;
+    flex-wrap:wrap ;
+  }
+
+  .flex-container>div{
+     font-size: 35px;
+     margin: 10px;
+     padding: 40px;
+     border: 1px solid rgb(201, 195, 195);
+     width: 30%;
+  }
+  @media only screen and (max-width: 633px) {
+    .flex-container>div{
+        font-size: 35px;
+        margin: 10px;
+        padding: 40px;
+        border: 1px solid gray;
+        width: 90%;
+     }
+  }
+
+  .project-done,.happy-clients,.on-going{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .total-number{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 3px
+  }
+  .title-fact{
+    color: #767676;
+    font-style: italic;
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 722px) {
+    .title-fact{
+        font-size: 12px;
+      }
+  }
+
+  /* Our partner section */
+  .flex-container-partner{
+    display: flex;
+    /* flex-wrap:wrap ; */
+  }
+
+  .flex-container-partner>div{
+     font-size: 35px;
+     margin: 10px;
+     /* padding: 5px; */
+     border: 1px solid rgb(201, 195, 195);
+     width: 30%;
+     opacity: .5;
+     transition: all .3s ease;
+  }
+  .flex-container-partner>div:hover{
+    opacity:1
+  }
+
+  /* Portfolio design */
+  .portfolio-title{
+    margin-top: 100px;
+    display: inline-block;
+    background-color: rgba(0,0,0,.04);
+    text-transform: uppercase;
+    padding: 4px 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(85, 79, 79);
+    font-family: "Montserrat" !important;
+    letter-spacing: 0;
+    margin-bottom: 15px
+  }
+  .navbar-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* need to be fixed */
+    width: 90%;
+  }
+  .navbar-left{
+    /* border: 2px solid red; */
+    width: 30%;
+  }
+  .navbar-title{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    font-family: "Montserrat" !important;
+    /* border: 2px solid red; */
+  }
+
+  .navbar-item{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+  }
+  .Navbar-list{
+    color: #767676;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .Navbar-list:hover{
+    letter-spacing: 1.5px;
+    color: black;
+  }
+  @media only screen and (max-width: 1187px) {
+    .navbar-title{
+        font-size: 20px;
+      }
+  }
+  @media only screen and (max-width: 903px) {
+    .navbar-left{
+      /* border: 2px solid red; */
+      width: 40%;
+    }
+    .navbar-item{
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .Navbar-list{
+      font-size: 15px;
+    }
+  }
+ 
+
+  
